@@ -53,7 +53,7 @@ void getcmd_replacepipe(char **av, t_cmd *cmd, int nb)
 		{
 			av[i] = 0;
 			cmd[a++].cmd_names = &(av[i +1]);
-			av = &(av[i+ 1]);
+			av = &(av[i+ i]);
 			i = 0;
 		}
 		else
